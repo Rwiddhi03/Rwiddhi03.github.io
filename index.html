@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="logo" href="images/icon.png" type="image/x-icon">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-xxl navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/icon.png" alt="Logo">
+      </a>
+      <h1>Weather App</h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NAVBAR" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="NAVBAR">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div id="C" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/cc1.avif" class="d-block w-100" alt="Image 1">
+    </div>
+    <div class="carousel-item">
+      <img src="images/cc2.avif" class="d-block w-100" alt="Image 2">
+    </div>
+    <div class="carousel-item">
+      <img src="images/cc3.avif" class="d-block w-100" alt="Image 3">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#C" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="sr-only">Previous</span>
+ </a>
+
+ <a class="carousel-control-next" href="#C" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="sr-only">Next</span>
+ </a>
+</div>
+
+<div class="card-container">
+  <div class="card">
+    <img src="images/icon.png" class="card-img-top" alt="City Image">
+    <div class="card-body">
+      <input type="text" class="form-control search-input" placeholder="Enter city" id="cityInput">
+      <button class="btn btn-primary mt-2" id="submitButton">Get Weather Details</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body weather-details" id="weatherDetails">
+    </div>
+  </div>
+</div>
+
+<footer class="bg-dark text-light text-center py-3">
+  <div class="footer-logo">
+    <img src="images/icon.png" alt="Footer Logo">
+  </div>
+  <p>&copy; CCA. All rights reserved</p>
+  <hr>
+  <a href="#">Home</a>
+  <a href="#">About Us</a>
+  <a href="#">Services</a>
+  <a href="#">Contact Us</a>
+  <hr>
+  <p><a href="#">Follow Us at Our Social Media Handles</a></p>
+
+</footer>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
